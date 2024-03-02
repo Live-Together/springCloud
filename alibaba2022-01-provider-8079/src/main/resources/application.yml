@@ -1,0 +1,18 @@
+
+server:
+  port: 8079
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: CY20030916
+    url: jdbc:mysql:///test?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+
+# 配置日志
+logging:
+  # 控制台日志的输出格式
+  pattern:
+    console: level-%level %msg%n
+  level:
+    root: info

@@ -1,0 +1,37 @@
+server:
+  port: 8081
+spring:
+#  jpa:
+#    # 指定是否在Spring容器启动时创建表，默认为 false
+#    generate-ddl: true
+#    # 指定是否在控制台显示SQL语句，默认为 false
+#    show-sql: true
+#    # 指定应用重启时不重新更新表
+#    hibernate:
+#      ddl-auto: none
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: CY20030916
+    url: jdbc:mysql:///test?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+
+# 配置日志
+logging:
+  # 控制台日志的输出格式
+  pattern:
+    console: level-%level %msg%n
+  level:
+    # 控制 spring boot 启动时显示的日志级别
+    root: info
+#    # 控制 hibernate 运行时的日志级别
+#    org.hibernate: info
+#    # 控制自己的代码运行时显示的日志级别
+#    com.example.alibaba202201provider8081: debug
+#    # 前提 show-sql: true
+#    # 显示 sql 动态参数
+#    org.hibernate.type.descriptor.sql.BasicBinder: trace
+#    # 前提 show-sql: true
+#    # 显示查询结果
+#    org.hibernate.type.descriptor.sql.BasicExtractor: trace
