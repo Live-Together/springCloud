@@ -1,6 +1,6 @@
-package com.example.alibaba202201consumer8080.controller;
+package com.example.alibaba202202consumer8080.controller;
 
-import com.example.alibaba202201consumer8080.pojo.Depart;
+import com.example.alibaba202202consumer8080.pojo.Depart;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;

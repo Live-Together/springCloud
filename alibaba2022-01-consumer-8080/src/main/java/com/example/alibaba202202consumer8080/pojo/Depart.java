@@ -1,4 +1,4 @@
-package com.example.alibaba202201consumer8080.pojo;
+package com.example.alibaba202202consumer8080.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
